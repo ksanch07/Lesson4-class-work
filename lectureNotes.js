@@ -18,3 +18,15 @@ console.error('Number must be between 1 and 10.')
 console.log(`%c${num} is between 1 and 10.`, `color:yellow;font-size:1.2em;`)
 
 // do while loop will always execute at least once
+let num
+let again = 'y'
+do {
+num = parseInt(prompt('Guess a number between 1 and 10'))
+if (num !== 5) {
+alert(`${num} was not the correct number`)
+} else {
+alert(`${num} was the right number!`)
+}
+again = prompt('Play again? (y or n)', 'y')
+} while (again === 'y')
+alert('Thank you for playing.')
